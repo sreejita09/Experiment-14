@@ -106,3 +106,44 @@ int main()
 }
 ~~~
 ![image](https://github.com/user-attachments/assets/4f28d359-b71a-4e8b-aeff-9b0f1e6d39d4)
+
+multilevel inheritance 
+~~~
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Vehicle {
+    public:
+    void fuel() 
+    {
+        cout << "This vehicle runs on fuel." << endl;
+    }
+};
+
+// subclass of vehicle 
+class Car : public Vehicle {
+    public:
+    void doors() {
+        cout << "This car has 4 doors." << endl;
+    }
+};
+
+// subclass of car 
+class SportsCar : public Car {
+    public:
+    void maxSpeed() {
+        cout << "speed: 200 mph." << endl;
+    }
+};
+
+int main() {
+    SportsCar myCar;
+    myCar.fuel();
+    myCar.doors();
+    myCar.maxSpeed();
+
+    return 0;
+}
+~~~
+![image](https://github.com/user-attachments/assets/6c0a4248-52a6-44e0-ab4a-09a8eb30f559)
