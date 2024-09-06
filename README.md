@@ -1,5 +1,34 @@
 # Experiment 14
+# Aim
+To study and implement Inheritance
 
+# Apparatus 
+Vs Code 
+
+# Theory 
+Inheritance in C++ is a mechanism that allows one class (called a derived class or child class) to acquire the properties and behaviors (data members and member functions) of another class (called a base class or parent class). It is a key feature of object-oriented programming (OOP) that promotes code reusability and hierarchical classification.
+
+Types of Inheritance in C++:
+Single Inheritance: A derived class inherits from a single base class.
+
+multiple inheritance: A derived class inherits from more than one base class.
+Multilevel Inheritance: A class is derived from another derived class, forming a multi-level hierarchy.
+Hierarchical Inheritance:Multiple derived classes inherit from a single base class.
+Hybrid Inheritance: A combination of multiple inheritance and multilevel inheritance.
+
+
+
+Access Specifiers in Inheritance: The relationship between base and derived classes depends on the access specifier used when inheriting.
+Public Inheritance:
+Public members of the base class remain public in the derived class.
+Protected members remain protected.
+Private members of the base class are not accessible directly by the derived class but can be accessed via public/protected methods.
+
+
+A class that has at least one pure virtual function (i.e., virtual void func() = 0;). It cannot be instantiated and is meant to be inherited.
+Inheritance enables code reusability, extendability, and polymorphism, making it easier to model complex systems in a hierarchical manner.
+
+# codes 
 
 single inheritance
 ~~~
@@ -33,7 +62,7 @@ int main()
 ~~~
 ![image](https://github.com/user-attachments/assets/3cbdc18c-8497-4318-8af9-86eec452a023)
 
-multilevel inheritance
+multiple inheritance
 ~~~
 #include <iostream>
 #include <string>
